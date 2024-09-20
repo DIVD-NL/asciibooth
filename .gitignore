@@ -1,6 +1,7 @@
 # Project specific files
 static/capture.jpg
 process/
+done/
 
 
 # Byte-compiled / optimized / DLL files
