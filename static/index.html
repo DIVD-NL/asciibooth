@@ -1,14 +1,29 @@
-<html>
-	<head>
-		<title>ASCII Booth</title>
-	</head>
-	<body>
-		<h1>ASCII photo booth</h1>
-		<div id='stream'>
-			<img src='/mjpeg'/>
-		</div>
-		<div id='click'>
-			<a href='/capture'>Click!</a>
-		</div>
-	</body
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Photo Booth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>ASCII Photo Booth</h1>
+
+    <div class="photo-container">
+        <div class="photo">
+            <div class="stream" id="stream"><img src='/mjpeg'/></div>
+            <div class="overlay hidden" id="overlay1">1</div>
+            <div class="overlay hidden" id="overlay2">2</div>
+            <div class="overlay hidden" id="overlay3">3</div>
+        </div>
+    </div>
+
+    <div class="button-container">
+	<form action='/capture' method='GET'>
+        	<button class="positive-btn">Take picture</button>
+	</form>
+    </div>
+
+</body>
 </html>
