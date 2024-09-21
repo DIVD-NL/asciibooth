@@ -18,9 +18,9 @@ def root():
 
 # setup camera and resolution
 picam2 = Picamera2()
-video_config = picam2.create_video_configuration(main={"size": (480,640)})
+video_config = picam2.create_video_configuration(main={"size": (480,480)})
 video_config["transform"] = libcamera.Transform(hflip=1, vflip=0)
-still_config = picam2.create_still_configuration(main={"size": (960,1280)})
+still_config = picam2.create_still_configuration(main={"size": (2048,2048)})
 picam2.configure(video_config)
 picam2.start()
 
