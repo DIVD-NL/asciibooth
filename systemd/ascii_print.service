@@ -1,13 +1,13 @@
 [Unit]
-Description=ASCII Email and Print Service
+Description=ASCII Print Service
 After=multi-user.target
 
 [Service]
 Type=idle
-WorkingDirectory=/home/asciibooth
+WorkingDirectory=/home/ascii/asciibooth
 User=ascii
 Group=ascii
-ExecStart=./email_and_print.py
+ExecStart=/usr/bin/python ./print.py
 
 [Install]
 WantedBy=multi-user.target

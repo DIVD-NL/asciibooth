@@ -27,6 +27,14 @@ h1 {
     border: 2px solid #333;
 }
 
+.stream {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    background-color: none;
+    border: none;
+}
+
 /* Overlay divs for numbers 1, 2, 3 */
 .overlay {
     position: absolute;
