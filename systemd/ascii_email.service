@@ -1,0 +1,14 @@
+[Unit]
+Description=ASCII Email Service
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/home/ascii/asciibooth
+User=ascii
+Group=ascii
+ExecStart=/usr/bin/python ./send_email.py
+
+[Install]
+WantedBy=multi-user.target
+

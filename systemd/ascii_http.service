@@ -1,0 +1,14 @@
+[Unit]
+Description=ASCII Boot HTTP Service
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/home/ascii/asciibooth
+User=ascii
+Group=ascii
+ExecStart=/usr/bin/python ./http_server.py
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,14 @@
+[Unit]
+Description=ASCII Print Service
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/home/ascii/asciibooth
+User=ascii
+Group=ascii
+ExecStart=/usr/bin/python ./print.py
+
+[Install]
+WantedBy=multi-user.target
+
