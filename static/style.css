@@ -1,6 +1,7 @@
 /* General styling for the page */
 body {
     font-family: Arial, sans-serif;
+    font-size: 1.5rem;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -62,8 +63,8 @@ h1 {
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 30px 50px;
+    font-size: 1.5rem;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -78,4 +79,8 @@ button {
 .negative-btn {
     background-color: #f44336;
     color: white;
+}
+
+input {
+    font-size: 1.5rem;
 }

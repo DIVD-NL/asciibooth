@@ -27,7 +27,7 @@ picam2.start()
 
 def gather_img():
     while True:
-        time.sleep(.2)
+        time.sleep(.15)
         data = io.BytesIO()
         picam2.capture_file(data, format='jpeg')
         yield (b'--frame\r\nContent-Type: image/jpeg\r\n\r\n' + data.getbuffer() + b'\r\n')
