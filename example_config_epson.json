@@ -1,0 +1,7 @@
+{
+	"printer" : "epson",
+	"size" :  "77x60",
+	"invert" : true,
+	"before_print" : "\u001B\u0040",
+	"after_print" : "                                                                                                                                                                                                                                                                                                                                                                                                                "
+}
