@@ -1,0 +1,11 @@
+This ASCII picture is offered to you by the helpful hackers of The Dutch Institute for Vulnerability Disclosure
+______ _____ _   _______         _____ _____ _____  _____ 
+|  _  \_   _| | | |  _  \ ____  |____ |  _  /  __ \|____ |
+| | | | | | | | | | | | |/ __ \     / /\ V /| /  \/    / /
+| | | | | | | | | | | | / / _` |    \ \/ _ \| |        \ \
+| |/ / _| |_\ \_/ / |/ / | (_| |.___/ / |_| | \__/\.___/ /
+|___/  \___/ \___/|___/ \ \__,_|\____/\_____/\____/\____/ 
+                         \____/                           
+Please visit: https://www.divd.nl and https://csirt.divd.nl to learn more
+Never gonna give you up
+
