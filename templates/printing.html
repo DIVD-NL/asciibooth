@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Photo Booth</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="7; url=/">
+</head>
+<body>
+
+    <h1>ASCII Photo Booth</h1>
+
+    <div class="photo-container">
+        <div class="photo">
+            <img class='stream' src='/capture.jpg'/>
+        </div>
+    </div>
+
+    <div class="button-container">
+		<h1>Your picture is being printed.</h1>
+		{% if email != "" %}
+			A copy of the picture is sent to '{{ email }}' as '{{ filename }}.jpg' file, and the ascii text as '{{ filename }}.txt'.
+		{% endif %}
+	</div>	
+</body>
+</html>

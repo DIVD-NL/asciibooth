@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASCII Photo Booth</title>
     <link rel="stylesheet" href="style.css">
+    {% if onscreen_keyboard %}
+		<link rel="stylesheet" href="kioskboard-2.3.0.min.css" />
+		<script src="kioskboard-2.3.0.min.js"></script>
+    {% endif %}
 </head>
 <body>
 
@@ -22,10 +26,10 @@
 		<br>
 		<div>
 	        	<label for="email">Email:</label>
-       			<input type="email" id="email-input" name="email">
+       			<input type="email" id="email-input" name="email" class="js-kioskboard-input" data-kioskboard-type="all" data-kioskboard-placement="bottom" data-kioskboard-specialcharacters="true" placeholder="you@example.com">
 			<br>
 			<br>
-        		<button class="positive-btn" id='print-btn'>Print (& email)</button>
+        		<button class="positive-btn" id='print-btn'>Print & email</button>
 			<br>
 			<br>
 		</div>
@@ -34,8 +38,9 @@
         	<button class="negative-btn">Retake</button>
 	</form>
 	<ul>
-		<li>If you want to get the picture and ascii by email, fill in you email address</li>
-		<li>CLick 'Print (& email)' to print the ascii art (end send the email)</li>
+		<li>If you leave the email address clear the picture will printed, but not emailed</li>
+		<li>If you want to get the picture and ascii by email as well, fill in you email address</li>
+		<li>Click 'Print & email' to print the ascii art (end send the email)</li>
 		<li>Or, click 'Retake' to take a new picture instead</li>
 	</ul>
     </div>

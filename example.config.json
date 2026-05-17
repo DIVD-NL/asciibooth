@@ -1,0 +1,19 @@
+{
+	"comment1" : "This is an example json config file",
+	"printer"  : "lp0",
+	"email"    : {
+		"from"		: "asciibooth@example.com",
+		"subject" 	: "Your ascii photo booth files",
+		"message"	: "Thank you for using the ascii photo booth.",
+		"server"	: "smtp.example.com",
+		"port"		: 587,
+		"user"		: "asciibooth@example.com",
+		"passwword"	: "ThisExamplePasswordWillNotWork"
+	},
+	"ui" : {
+		"host"		: "127.0.0.1",
+		"port"		: 5000,
+		"onscreen_keyboard" : true,
+		"debug"		: false
+	}
+}

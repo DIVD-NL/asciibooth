@@ -86,4 +86,6 @@ while True:
                 print(f"Emailing '{file}'...", end="")
                 sys.stdout.flush()
                 mailit(file)
-    time.sleep(1)
+        time.sleep(1)
+    else:
+        time.sleep(86400) # Sleep for a day
